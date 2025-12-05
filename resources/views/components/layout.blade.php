@@ -10,36 +10,174 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+
+    <style>
+        .header-sticky {
+            background-color: #0b192c !important;
+            transition: background-color 0.3s ease-in-out;
+            border-color: transparent;
+        }
+
+        @keyframes floatY {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .float-animate {
+            animation: floatY 3s ease-in-out infinite;
+        }
+
+        @keyframes step-scroll {
+
+            0%,
+            20% {
+                transform: translateX(0);
+            }
+
+            25%,
+            45% {
+                transform: translateX(-100%);
+            }
+
+            50%,
+            70% {
+                transform: translateX(-200%);
+            }
+
+            75%,
+            95% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+
+        .step-slider {
+            display: flex;
+            animation: step-scroll 12s infinite steps(1);
+        }
+
+
+        @keyframes floatWave {
+            0% {
+                transform: translateY(10px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        .wave-animate {
+            animation: floatWave 5s ease-in-out infinite;
+        }
+
+        .preview-img {
+            clip-path: inset(0 100% 0 0);
+            /* Start fully hidden from right */
+            transition: clip-path 0.6s ease-out;
+        }
+
+        .preview-img.reveal {
+            clip-path: inset(0 0 0 0);
+            /* Reveal fully */
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.getElementById("brandSlider");
+            const slideWidth = slider.children[0].offsetWidth + 30;
+            let index = 0;
+
+            setInterval(() => {
+                index++;
+                slider.style.transform = `translateX(${-slideWidth * index}px)`;
+
+                if (index >= slider.children.length - 4) {
+                    setTimeout(() => {
+                        slider.style.transition = "none";
+                        slider.style.transform = "translateX(0)";
+                        index = 0;
+
+                        setTimeout(() => {
+                            slider.style.transition = "transform 0.5s";
+                        }, 500);
+                    }, 500);
+                }
+            }, 1500);
+        });
+
+        window.addEventListener("scroll", function () {
+            const header = document.getElementById("mainHeader");
+
+            if (window.scrollY > 50) {
+                header.classList.add("header-sticky");
+            } else {
+                header.classList.remove("header-sticky");
+            }
+        });
+    </script>
+
+    {{-- tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        laravel: "#ef3b2d",
-                    },
-                },
-            },
-        };
+                    fontFamily: {
+                        marcellus: ['Marcellus', 'serif'],
+                        spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
+                    }
+                }
+            }
+        }
     </script>
-    <title>LaraGigs | Find Laravel Jobs & Projects</title>
+
+
+    <title>Tech Guru</title>
 </head>
 
-<body class="mb-48">
-    <x-header />
 
-    {{-- VIEW OUTPUT --}}
-    <main>
+<body class="bg-[#0B192C] font-spacegrotesk w-full min-h-screen flex flex-col text-white">
+
+    {{-- HEADER --}}
+    <x-header.topHeader />
+
+
+
+    {{-- MAIN CONTENT --}}
+    <main class="flex-grow">
         {{ $slot }}
     </main>
 
-    <footer
-        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
-        <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+    {{-- FOOTER --}}
 
-        <a href="/listing/create" class="absolute top-1/3 right-10 bg-black text-white py-2 px-5">Post Job</a>
-    </footer>
 
 </body>
 
