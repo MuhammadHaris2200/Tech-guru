@@ -1,33 +1,88 @@
-<div x-data="{ openMenu: false } ">
+<style>
+    .link-underline {
+        position: relative;
+    }
+
+    .link-underline::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #edc458;
+        transition: width 0.3s ease, right 0.3s ease;
+    }
+
+    .link-underline:hover::after {
+        width: 100%;
+        right: 0;
+        left: auto;
+    }
+</style>
+
+<div x-data="{ openMenu: false }  header">
+
+
     <!-- EVERYTHING must be inside this div -->
+    <header id="mainHeader" class="sticky top-0 z-10 w-full p-6 border-b border-white/20 transition-all duration-500 ">
 
-    <header id="mainHeader"
-        class="sticky top-0 z-[999] w-full p-6 border-b border-white/20 transition-all duration-500 ">
-
-        <div class="py-4 flex items-center justify-between">
+        <div class="px-8 flex items-center justify-between">
 
             <div class="flex items-center gap-2">
                 <img src="images/logo-1.webp" />
             </div>
 
             <nav class="hidden md:flex items-center gap-8 text-gray-300">
-                <a href="#" class="hover:text-yellow-500 transition text-yellow-500">Home</a>
-                <a href="#" class="hover:text-yellow-500 transition">About</a>
-                <a href="#" class="hover:text-yellow-500 transition">Pages</a>
-                <a href="#" class="hover:text-yellow-500 transition">Services</a>
-                <a href="#" class="hover:text-yellow-500 transition">Shop</a>
-                <a href="#" class="hover:text-yellow-500 transition">Blog</a>
-                <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+                <a href="#"
+                    class="hover:text-[#edc458]transition text-[#edc458] flex items-center gap-1 link-underline">
+
+                    Home
+                    <i class="ri-arrow-drop-down-line text-2xl"></i>
+
+                </a>
+
+                <a href="#"
+                    class="hover:text-[#edc458] text-[#f3f2f3] link-underline transition  link-underline">About</a>
+                <a href="#"
+                    class="hover:text-[#edc458] text-[#f3f2f3] link-underline transition  flex items-center gap-1">Pages
+                    <i class="ri-arrow-drop-down-line text-2xl"></i>
+
+                </a>
+                <a href="#"
+                    class="hover:text-[#edc458] text-[#f3f2f3]  link-underline transition  flex items-center gap-1 ">Services
+                    <i class="ri-arrow-drop-down-line text-2xl"></i>
+                </a>
+                <a href="#"
+                    class="hover:text-[#edc458] text-[#f3f2f3]  link-underline transition  flex items-center gap-1 ">Shop
+                    <i class="ri-arrow-drop-down-line text-2xl"></i>
+
+                </a>
+                <a href="#" class="hover:text-[#edc458] text-[#f3f2f3]  link-underline transition">Blog</a>
+                <a href="#" class="hover:text-[#edc458] text-[#f3f2f3]  link-underline transition">Contact</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <button class="bg-blue-600 hover:bg-yellow-700 transition px-5 py-2 rounded-lg font-medium">
-                    Get In Touch →
+
+                <button class="border border-white/80 rounded-2xl p-4 
+           text-xl leading-none flex items-center justify-center
+           hover:text-[#edc458] text-[#f3f2f3] 
+           transition-all duration-300">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="bg-gradient-to-r from-blue-600 to-blue-100 
+           hover:from-blue-100 hover:to-blue-600
+           transition-all duration-300 
+           p-4 px-6 rounded-lg font-medium flex items-center justify-center gap-3">
+                    Get In Touch <span class="font-bold"> →</span>
                 </button>
 
                 <!-- OPEN SIDEBAR BUTTON -->
-                <button @click="openMenu = true" class="text-3xl hover:text-yellow-500 transition-all duration-500">
-                    ☰
+                <button @click="openMenu = true" class="border border-white/80 rounded-2xl p-4 
+           text-xl leading-none flex items-center justify-center
+           hover:text-[#edc458] text-[#f3f2f3] 
+           transition-all duration-300">
+                    <i class="ri-menu-4-line"></i>
                 </button>
             </div>
 
@@ -43,15 +98,15 @@
         class="fixed left-0 top-0 w-80 h-full bg-[#0B192C] text-white shadow-xl z-[999] p-6 flex flex-col space-y-6 transform"
         @click.away="openMenu = false">
 
-        <button class="text-2xl self-end hover:text-yellow-500" @click="openMenu = false">✕</button>
+        <button class="text-2xl self-end hover:text-[#edc458] text-[#f3f2f3]" @click="openMenu = false">✕</button>
 
-        <a href="#" class="text-lg hover:text-yellow-500">Home</a>
-        <a href="#" class="text-lg hover:text-yellow-500">About</a>
-        <a href="#" class="text-lg hover:text-yellow-500">Services</a>
-        <a href="#" class="text-lg hover:text-yellow-500">Shop</a>
-        <a href="#" class="text-lg hover:text-yellow-500">Blog</a>
-        <a href="#" class="text-lg hover:text-yellow-500">Contact</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">Home</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">About</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">Services</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">Shop</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">Blog</a>
+        <a href="#" class="text-lg hover:text-[#edc458] text-[#f3f2f3]">Contact</a>
 
     </div>
 
-</div> <!-- END x-data wrapper -->
+</div>

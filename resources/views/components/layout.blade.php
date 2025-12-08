@@ -17,6 +17,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
+
+
+    {{-- Icons --}}
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
     <script src="//unpkg.com/alpinejs" defer></script>
 
 
@@ -104,7 +110,6 @@
 
         .preview-img.reveal {
             clip-path: inset(0 0 0 0);
-            /* Reveal fully */
         }
     </style>
 
@@ -146,6 +151,8 @@
     {{-- tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
 
+
+    {{-- JS --}}
     <script>
         tailwind.config = {
             theme: {
@@ -176,7 +183,6 @@
         {{ $slot }}
     </main>
 
-    {{-- FOOTER --}}
 
 
 </body>

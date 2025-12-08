@@ -38,11 +38,13 @@
                     </h3>
                 </div>
 
-                <div class="service-preview absolute -top-20 left-1/2 -translate-x-1/2
+
+
+                <div class="service-preview absolute -top-8 left-1/3 translate-x-[calc(-50%+30px)]
     pointer-events-none opacity-0 transition-all duration-300">
                     <img src="" class="preview-img z-20 object-cover rounded-xl shadow-2xl">
-
                 </div>
+
 
                 <div class="md:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-4 text-[#AEB5D1]">
                     <div>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <!-- ROW 3 -->
+            <!-- ROW 2 -->
             <div class="group relative grid grid-cols-1 md:grid-cols-12 items-center 
                 border-b  border-white/10 pb-10 gap-8" data-image="images/services/services-2-2.jpg">
 
@@ -90,11 +92,12 @@
                     </h3>
                 </div>
 
-                <div class="service-preview absolute -top-20 left-3/5 -translate-x-1/2
+
+                <div class="service-preview absolute -top-8 left-1/3 translate-x-[calc(-50%+30px)]
     pointer-events-none opacity-0 transition-all duration-300">
                     <img src="" class="preview-img z-20 object-cover rounded-xl shadow-2xl">
-
                 </div>
+
                 <div class="md:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-4 text-[#AEB5D1]">
                     <div>
 
@@ -129,14 +132,11 @@
                 </div>
             </div>
 
-            <!-- ROW 1 -->
+            <!-- ROW 3 -->
             <div class="group relative grid grid-cols-1 md:grid-cols-12 items-center 
-                border-b border-white/10 py-10 gap-8" data-image="images/services/services-2-1.jpg">
+                border-b  border-white/10 pb-10 gap-8" data-image="images/services/services-2-2.jpg">
 
-
-
-
-                <div class="md:col-span-5 flex items-center gap-6">
+                <div class="md:col-span-6 flex items-center gap-6">
                     <div class="w-10 h-10 rounded-full border border-[#FF7AC4] text-[#FF7AC4]
                         flex items-center justify-center font-semibold">03</div>
                     <h3 class="text-white text-2xl font-semibold group-hover:text-[#FF7AC4] transition">
@@ -144,11 +144,11 @@
                     </h3>
                 </div>
 
-                <div class="service-preview absolute -top-20 left-3/6 -translate-x-1/2
+
+                <div class="service-preview absolute -top-8 left-1/3 translate-x-[calc(-50%+30px)]
     pointer-events-none opacity-0 transition-all duration-300">
                     <img src="" class="preview-img z-20 object-cover rounded-xl shadow-2xl">
                 </div>
-
 
                 <div class="md:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-4 text-[#AEB5D1]">
                     <div>
@@ -164,45 +164,40 @@
                     <div>
 
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Social Media
-                            Marketing
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Cloud Migration
                         </p>
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> UI/UX Design
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> User Research
                         </p>
 
                     </div>
                     <div>
 
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span>Content Strategy
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Prototyping
                         </p>
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Paid Advertising
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> SEO Optimization
                         </p>
 
                     </div>
                 </div>
             </div>
 
-
-            <!-- ROW 1 -->
+            <!-- ROW 4 -->
             <div class="group relative grid grid-cols-1 md:grid-cols-12 items-center 
-                border-b border-white/10 py-10 gap-8" data-image="images/services/services-2-1.jpg">
+                border-b  border-white/10 pb-10 gap-8" data-image="images/services/services-2-2.jpg">
 
-
-
-
-
-                <div class="md:col-span-5 flex items-center gap-6">
+                <div class="md:col-span-6 flex items-center gap-6">
                     <div class="w-10 h-10 rounded-full border border-[#FF7AC4] text-[#FF7AC4]
-                        flex items-center justify-center font-semibold">04</div>
+                        flex items-center justify-center font-semibold">05</div>
                     <h3 class="text-white text-2xl font-semibold group-hover:text-[#FF7AC4] transition">
                         Software Development <br /> Solutions
                     </h3>
                 </div>
 
-                <div class="service-preview absolute -top-20 right-1/2 -translate-x-1/2
+
+                <div class="service-preview absolute -top-8 left-1/3 translate-x-[calc(-50%+30px)]
     pointer-events-none opacity-0 transition-all duration-300">
                     <img src="" class="preview-img z-20 object-cover rounded-xl shadow-2xl">
                 </div>
@@ -221,20 +216,20 @@
                     <div>
 
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> UI/UX Design
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Cloud Migration
                         </p>
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> UI/UX Design
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> User Research
                         </p>
 
                     </div>
                     <div>
 
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> UI/UX Design
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> Prototyping
                         </p>
                         <p class="transition group-hover:text-[#B86BFF]">
-                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> UI/UX Design
+                            <span class="group-hover:opacity-0 transition-all duration-200">+</span> SEO Optimization
                         </p>
 
                     </div>
