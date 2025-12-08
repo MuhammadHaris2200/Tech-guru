@@ -255,9 +255,10 @@
         });
 
         row.addEventListener("mouseleave", () => {
-            preview.style.opacity = "0";
             img.classList.remove("reveal");
+            preview.style.opacity = "0";
         });
     });
+
 
 </script>

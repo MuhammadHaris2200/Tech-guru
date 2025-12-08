@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
+
     <script src="//unpkg.com/alpinejs" defer></script>
 
 
@@ -104,7 +105,6 @@
 
         .preview-img {
             clip-path: inset(0 100% 0 0);
-            /* Start fully hidden from right */
             transition: clip-path 0.6s ease-out;
         }
 
