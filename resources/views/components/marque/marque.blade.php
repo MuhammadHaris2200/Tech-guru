@@ -43,24 +43,24 @@
 
 <div class="py-4 overflow-hidden relative gradient-box">
 
-    <ul class="scroll-list flex gap-10 whitespace-nowrap font-semibold text-white tracking-wide">
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> BRANDING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> WEBSITE</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> CYBER SECURITY</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> UI/UX DESIGNING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> DIGITAL MARKETING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> APP DEVELOPMENT</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> SEO OPTIMIZATION</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> CLOUD SOLUTIONS</li>
+    <ul class="scroll-list font-marcellus flex gap-10 whitespace-nowrap font-medium text-white tracking-wide">
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> BRANDING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> WEBSITE</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> CYBER SECURITY</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> UI/UX DESIGNING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> DIGITAL MARKETING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> APP DEVELOPMENT</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> SEO OPTIMIZATION</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> CLOUD SOLUTIONS</li>
 
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> BRANDING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> WEBSITE</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> CYBER SECURITY</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> UI/UX DESIGNING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> DIGITAL MARKETING</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> APP DEVELOPMENT</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> SEO OPTIMIZATION</li>
-        <li><i class="ri-star-line text-[#edc458] me-10"></i> CLOUD SOLUTIONS</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> BRANDING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> WEBSITE</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> CYBER SECURITY</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> UI/UX DESIGNING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> DIGITAL MARKETING</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> APP DEVELOPMENT</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> SEO OPTIMIZATION</li>
+        <li class="text-2xl"> <i class="ri-star-line text-[#edc458] me-10"></i> CLOUD SOLUTIONS</li>
     </ul>
 
 </div>
