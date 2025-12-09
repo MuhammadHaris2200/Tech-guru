@@ -12,5 +12,6 @@
     <x-marque.marque />
     <x-workprocess.working-process />
     <x-portfolio.portfolio />
+    <x-pricing.pricing />
 
 </x-layout>
