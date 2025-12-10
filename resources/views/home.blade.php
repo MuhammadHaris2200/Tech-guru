@@ -13,5 +13,7 @@
     <x-workprocess.working-process />
     <x-portfolio.portfolio />
     <x-pricing.pricing />
+    <x-getintouch.getintouch />
+    <x-events.event />
 
 </x-layout>
