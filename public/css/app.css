@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-marcellus: "Marcellus", serif;
+    --color-primary: #edc458;
+    --text-secondary: black;
+}
+
+.orange-color {
+    color: #edc458;
+}
+body {
+    font-family: var(--font-sans);
+    color: white;
+}
+
+
+.thm-btn {
+        vertical-align: middle;
+        -webkit-appearance: none;
+        color: #fff;
+        text-transform: capitalize;
+        z-index: 1;
+        background: linear-gradient(270deg, #fa5674 0%, #6065d4 100%);
+        border-radius: 12px;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 25px 17px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        transition: all .5s linear;
+        display: inline-flex;
+        position: relative;
+        overflow: hidden;
+        outline: none !important;
+        border: none;
+        cursor: pointer;
+    }
+
+    .thm-btn::before {
+        content: "";
+        background-color: #ffd25d;
+        z-index: -1;
+        width: 50%;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .thm-btn::after {
+        background-color: #ffd25d;
+        content: "";
+        z-index: -1;
+        width: 50%;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .thm-btn:hover::before {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .thm-btn:hover::after {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .thm-btn:hover {
+        color: #333;
+    }

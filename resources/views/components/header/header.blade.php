@@ -70,10 +70,7 @@
            transition-all duration-300">
                     <i class="ri-search-line"></i>
                 </button>
-                <button class="bg-gradient-to-r from-blue-600 to-blue-100 
-           hover:from-blue-100 hover:to-blue-600
-           transition-all duration-300 
-           p-4 px-6 rounded-lg font-medium flex items-center justify-center gap-3">
+                <button class="thm-btn">
                     Get In Touch <span class="font-bold"> →</span>
                 </button>
 

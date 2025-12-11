@@ -25,13 +25,10 @@
             </p>
 
             <div class="mt-6 flex items-center gap-4">
-                <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 
-                               rounded-lg transition-all duration-300 font-medium hover:brightness-110">
+                <button class="thm-btn">
                     Get Started →
                 </button>
-                <button
-                    class="border border-white/40 px-6 py-3 rounded-lg font-medium 
-                               hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all duration-300">
+                <button class="thm-btn">
                     Read More →
                 </button>
             </div>

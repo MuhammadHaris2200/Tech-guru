@@ -1,13 +1,14 @@
-<section class="relative py-20 bg-[#071A3E]">
+<section class="relative py-20 bg-[#071A3E] z-10">
 
     <div class="max-w-[1400px] mx-auto px-6">
 
         <!-- TOP HEADING -->
         <div class="mb-16 flex justify-between">
             <div class="w-3/4">
-                <p class="text-[#7AA2FF] font-medium tracking-wide flex items-center gap-2">
-                    <span class="w-10 h-[2px] bg-[#7AA2FF] inline-block"></span>
+                <p class="text-[#4FA0FF] tracking-wider text-sm font-medium flex items-center justify-start gap-2">
+                    <span class="w-2 h-[2px] bg-gradient-to-r from-[#4FA0FF] to-[#79b0f0] rounded-full"></span>
                     Our Services
+                    <span class="w-8 h-[2px] bg-gradient-to-r from-[#4FA0FF] to-[#6daef8] rounded-full"></span>
                 </p>
 
                 <h2 class="text-white text-4xl md:text-5xl font-medium leading-tight mt-4">

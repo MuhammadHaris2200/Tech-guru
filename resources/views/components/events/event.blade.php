@@ -39,7 +39,7 @@
         right: 0;
         width: 50%;
         height: 0;
-        background-color: var(--techguru-base);
+        background-color: #ffd25d;
         border-radius: 22px;
         z-index: -1;
         opacity: 0;
@@ -94,8 +94,7 @@
             </div>
 
             <!-- Contact Button -->
-            <button
-                class="px-8 py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-[#7b4dff] to-[#ff5686] hover:opacity-90 transition-all mt-6 lg:mt-0">
+            <button class="thm-btn">
                 Contact Us →
             </button>
 

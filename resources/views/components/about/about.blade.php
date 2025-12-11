@@ -90,8 +90,7 @@
                     </div>
                 </div>
 
-                <button
-                    class="bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-xl font-medium shadow-lg hover:opacity-90 transition">
+                <button class="thm-btn">
                     Learn More →
                 </button>
 

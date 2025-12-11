@@ -32,6 +32,7 @@
 
     <script src="//unpkg.com/alpinejs" defer></script>
 
+    <link rel="stylesheet" href="{{ asset("css/app.css") }}">
 
     <style>
         .header-sticky {

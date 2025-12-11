@@ -150,7 +150,11 @@
 
         <!-- RIGHT CONTENT -->
         <div class="text-white order-1">
-            <p class="text-blue-400 mb-2 tracking-wide">— Why Chooses us —</p>
+            <p class="text-[#4FA0FF] tracking-wider text-sm font-medium flex items-center justify-center gap-2">
+                <span class="w-2 h-[2px] bg-gradient-to-r from-[#4FA0FF] to-[#79b0f0] rounded-full"></span>
+                Why choose us
+                <span class="w-8 h-[2px] bg-gradient-to-r from-[#4FA0FF] to-[#6daef8] rounded-full"></span>
+            </p>
 
             <h2 class="text-4xl lg:text-4xl tracking-wider my-10 font-bold ">
 
