@@ -21,19 +21,18 @@
     }
 </style>
 
-<div x-data="{ openMenu: false }  header">
-
+<div x-data="{ openMenu: false }">
 
     <!-- EVERYTHING must be inside this div -->
-    <header id="mainHeader" class="sticky top-0 z-10 w-full p-6 border-b border-white/20 transition-all duration-500 ">
+    <header id="mainHeader" class="border sticky top-0 z-50 w-full py-5 px-4 md:py-6 lg:p-6 border-b border-white/20">
 
-        <div class="px-8 flex items-center justify-between">
+        <div class="md:px-4 px-3 flex items-center justify-between">
 
             <div class="flex items-center gap-2">
                 <img src="images/logo-1.webp" />
             </div>
 
-            <nav class="hidden md:flex items-center gap-8 text-gray-300">
+            <nav class="hidden xl:flex items-center gap-8 text-gray-300">
                 <a href="#"
                     class="hover:text-[#edc458] transition text-[#edc458] flex items-center gap-1 link-underline">
 
@@ -62,20 +61,29 @@
                 <a href="#" class="hover:text-[#edc458] text-[#f3f2f3]  link-underline transition">Contact</a>
             </nav>
 
-            <div class="flex items-center gap-4">
 
-                <button class="border border-white/80 rounded-2xl p-4 
-           text-xl leading-none flex items-center justify-center
+            {{-- Menu Button --}}
+            <button @click="openMenu = true">
+                <i class="ri-menu-line text-2xl xl:hidden"></i>
+            </button>
+
+
+            <div class="hidden md:flex items-center gap-4">
+
+                <button class=" border border-white/80 rounded-2xl p-4 
+           text-xl leading-none md:flex items-center justify-center
            hover:text-[#edc458] text-[#f3f2f3] 
            transition-all duration-300">
                     <i class="ri-search-line"></i>
                 </button>
-                <button class="thm-btn">
+
+
+                <button class="thm-btn hidden md:block">
                     Get In Touch <span class="font-bold"> →</span>
                 </button>
 
                 <!-- OPEN SIDEBAR BUTTON -->
-                <button @click="openMenu = true" class="border border-white/80 rounded-2xl p-4 
+                <button @click="openMenu = true" class="md:border me-3 border-white/80 rounded-2xl p-4 
            text-xl leading-none flex items-center justify-center
            hover:text-[#edc458] text-[#f3f2f3] 
            transition-all duration-300">
@@ -87,7 +95,7 @@
     </header>
 
     <!-- OVERLAY -->
-    <div x-show="openMenu" x-transition.opacity class="fixed inset-0 bg-black/50 z-[998]" @click="openMenu = false">
+    <div x-show="openMenu" x-transition.opacity class=" fixed inset-0 bg-black/50 z-[998]" @click="openMenu = false">
     </div>
 
     <!-- SIDEBAR (LEFT SIDE) -->

@@ -125,11 +125,12 @@ body {
         transform: translateX(0);
     }
 }
-
 .header-sticky {
-    background-color: #0b192c !important;
-    transition: background-color 0.3s ease-in-out;
-    border-color: transparent;
+    position: sticky !important;
+    top: 0 !important;
+    background: rgba(11, 25, 44, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @keyframes floatY {

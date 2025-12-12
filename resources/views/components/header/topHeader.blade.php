@@ -1,4 +1,4 @@
-<div class="w-full h-16 flex px-12 bg-[#2f3448]/70  justify-between items-center ">
+<div class="hidden w-full h-16 min-[1440px]:flex px-12 bg-[#2f3448]/70 justify-between items-center">
 
     <div class=" flex justify-center items-center h-full">
         <p class="text-gray-300 text-md font-bold hover:text-amber-500 transition-all duration-300 cursor-pointer">

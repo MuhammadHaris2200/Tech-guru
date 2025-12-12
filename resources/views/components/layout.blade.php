@@ -37,11 +37,21 @@
 
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
 
-    <style>
-
-    </style>
-
     <script>
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        marcellus: ['Marcellus', 'serif'],
+                        spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
+                    }
+                     screens: {
+                        '1440': '1440px',
+                    },
+                }
+            }
+        }
         document.addEventListener("DOMContentLoaded", () => {
             const slider = document.getElementById("brandSlider");
             const slideWidth = slider.children[0].offsetWidth + 30;
@@ -65,46 +75,20 @@
             }, 1500);
         });
 
-        window.addEventListener("scroll", function () {
-            const header = document.getElementById("mainHeader");
 
-            if (window.scrollY > 50) {
-                header.classList.add("header-sticky");
-            } else {
-                header.classList.remove("header-sticky");
-            }
-        });
     </script>
 
     {{-- tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
 
-
-    {{-- JS --}}
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        marcellus: ['Marcellus', 'serif'],
-                        spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-
     <title>Tech Guru</title>
 </head>
 
 
-<body class="bg-[#0B192C] font-spacegrotesk w-full min-h-screen flex flex-col text-white">
+<body class="bg-[#0B192C] font-spacegrotesk w-full min-h-screen text-white">
 
     {{-- HEADER --}}
     <x-header.topHeader />
-
-
 
     {{-- MAIN CONTENT --}}
     <main class="flex-grow">
@@ -112,8 +96,6 @@
     </main>
 
     <x-footer.footer />
-
-
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 <div {{ $attributes->merge([
-    'class' => "parent relative bg-cover bg-center bg-no-repeat $class"
-]) }} @if ($bg) style="background-image: url('{{ $bg }}');" @else
-    style="background-image: url('/images/default-bg.jpg');" @endif>
+    'class' => "parent bg-cover bg-center bg-no-repeat $class"
+]) }} @if ($bg)
+style="background-image: url('{{ $bg }}');" @else style="background-image: url('/images/default-bg.jpg');" @endif>
 
 
     {{-- GRADIENT OVERLAY --}}
@@ -12,7 +12,7 @@
     <x-header.header />
 
     {{-- MAIN HERO CONTENT --}}
-    <div class="main  relative z-10">
+    <div class=" relative z-10">
         <x-hero.heroMain />
 
     </div>

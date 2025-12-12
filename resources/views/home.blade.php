@@ -1,8 +1,6 @@
 <x-layout>
     <x-home-layout bg="images/backgrounds/slider.jpg" class="relative">
-
         <x-hero.heroMain />
-
     </x-home-layout>
 
     <x-about.about />
@@ -11,7 +9,7 @@
     <x-whychoseus.why-chose-us />
     <x-marque.marque />
     <x-workprocess.working-process />
-    <x-portfolio.portfolio />
+    {{-- <x-portfolio.portfolio /> --}}
     <x-pricing.pricing />
     <x-getintouch.getintouch />
     <x-events.event />

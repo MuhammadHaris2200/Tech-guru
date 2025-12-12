@@ -479,21 +479,18 @@
             ]
         });
 
-        // Function to handle the 4th card being 500px wide
+
         function updateCardWidths() {
             const slider = $('.responsive');
             const currentSlide = slider.slick('slickCurrentSlide');
             const slides = $('.responsive .slick-slide');
 
-            // Reset all slides to 200px
             slides.css('flex', '0 0 200px');
 
-            // Find the 4th slide in the current view
             const fourthSlideIndex = currentSlide + 3;
             const fourthSlide = $(`.responsive .slick-slide[data-slick-index="${fourthSlideIndex}"]`);
 
             if (fourthSlide.length) {
-                // Set the 4th slide to 500px
                 fourthSlide.css('flex', '0 0 500px');
             }
         }
